@@ -1,0 +1,16 @@
+PODS:
+  - Retargetly (1.2.3)
+
+DEPENDENCIES:
+  - Retargetly
+
+SPEC REPOS:
+  https://github.com/retargetly/RetargetlyPodSpecs.git:
+    - Retargetly
+
+SPEC CHECKSUMS:
+  Retargetly: 4c9f155d8cfb3f2b62972d5092bcd900291ee382
+
+PODFILE CHECKSUM: bb0d8e4e89a2d394ab770e5a71d7276e0ad2936b
+
+COCOAPODS: 1.10.0

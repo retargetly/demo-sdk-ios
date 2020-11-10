@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  RetargetlyDemo
+
+  Created by José Valderrama on 16/06/2018.
+  Copyright © 2018 Retargetly. All rights reserved.
+*/
+
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Location Service is required for additional functionality";
+"NSLocationWhenInUseUsageDescription" = "Location Service is required for additional functionality";
+

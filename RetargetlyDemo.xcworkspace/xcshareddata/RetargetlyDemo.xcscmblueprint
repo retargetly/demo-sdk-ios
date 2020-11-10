@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "51117F0114E3BEED9FA66DEBEAA9B3E6B7E03A00",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "51117F0114E3BEED9FA66DEBEAA9B3E6B7E03A00" : 9223372036854775807,
+    "43A3841B6240EF35DD5F545DCEB1693F62A5B652" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D28E6136-7F58-48BF-9DAD-A6F5D1AA3D6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "51117F0114E3BEED9FA66DEBEAA9B3E6B7E03A00" : "RetargetlyDemo\/",
+    "43A3841B6240EF35DD5F545DCEB1693F62A5B652" : "retargetly-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RetargetlyDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RetargetlyDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/retargetly\/sdk-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43A3841B6240EF35DD5F545DCEB1693F62A5B652"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/jose_valderrama\/retargetlydemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "51117F0114E3BEED9FA66DEBEAA9B3E6B7E03A00"
+    }
+  ]
+}
