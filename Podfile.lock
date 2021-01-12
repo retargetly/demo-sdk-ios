@@ -1,16 +1,16 @@
 PODS:
-  - Retargetly (1.2.3)
+  - Retargetly (1.2.5)
 
 DEPENDENCIES:
-  - Retargetly
+  - Retargetly (from `/Users/josevalderrama/Documents/dev/retargetly/sdk-ios`)
 
-SPEC REPOS:
-  https://github.com/retargetly/RetargetlyPodSpecs.git:
-    - Retargetly
+EXTERNAL SOURCES:
+  Retargetly:
+    :path: "/Users/josevalderrama/Documents/dev/retargetly/sdk-ios"
 
 SPEC CHECKSUMS:
-  Retargetly: 4c9f155d8cfb3f2b62972d5092bcd900291ee382
+  Retargetly: 59da92115729584066d4d3ca046ea25ff49eeb78
 
-PODFILE CHECKSUM: bb0d8e4e89a2d394ab770e5a71d7276e0ad2936b
+PODFILE CHECKSUM: 6c966cbddc8c6eb0c78bb4d2cd5301a3b93951af
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

@@ -1,6 +1,0 @@
-framework module Retargetly {
-  umbrella header "Retargetly-umbrella.h"
-
-  export *
-  module * { export * }
-}
