@@ -28,7 +28,7 @@ class DashboardViewController: UIViewController {
         }
     }
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-    final let sourceHashDev = "x9mfLt0ATihM0n0bI4PPuV9bbDNa1E3D"
+    final let sourceHashDev = "NBa1ouGBZ4NmXYJcK0EUrWBWZjsDl2H2"
     var config: RManagerConfiguration!
     
     override func viewDidLoad() {
