@@ -37,6 +37,8 @@
 	<string>Location Service is required for additional functionality</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location Service is required for additional functionality</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Tracking Service is required for additional functionality</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

@@ -13,6 +13,7 @@
 		AB64E63E1F2FBD0D00885CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB64E63C1F2FBD0D00885CAB /* Main.storyboard */; };
 		AB64E6401F2FBD0D00885CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB64E63F1F2FBD0D00885CAB /* Assets.xcassets */; };
 		AB64E6431F2FBD0D00885CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB64E6411F2FBD0D00885CAB /* LaunchScreen.storyboard */; };
+		AB6D4DC3263961460002CECE /* RequiredBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6D4DC2263961460002CECE /* RequiredBridge.m */; };
 		AB771D8D20E407410087EC6C /* Bundle+RetargetlyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB771D8C20E407410087EC6C /* Bundle+RetargetlyDemo.swift */; };
 		ABA0B2FB25AE1C5B0043CFA5 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA0B2F925AE1C5B0043CFA5 /* SwitchTableViewCell.swift */; };
 		ABA0B2FC25AE1C5B0043CFA5 /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA0B2FA25AE1C5B0043CFA5 /* SwitchTableViewCell.xib */; };
@@ -31,6 +32,8 @@
 		AB64E63D1F2FBD0D00885CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB64E63F1F2FBD0D00885CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB64E6421F2FBD0D00885CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB6D4DC1263961450002CECE /* RetargetlyDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetargetlyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB6D4DC2263961460002CECE /* RequiredBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequiredBridge.m; sourceTree = "<group>"; };
 		AB771D8C20E407410087EC6C /* Bundle+RetargetlyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+RetargetlyDemo.swift"; sourceTree = "<group>"; };
 		ABA0B2F925AE1C5B0043CFA5 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		ABA0B2FA25AE1C5B0043CFA5 /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		AB4FB82F1F3E42830089BADF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB6D4DC4263969A40002CECE /* Objc */,
 				AB15D29120D599430031F31A /* Localization */,
 				AB64E6381F2FBD0D00885CAB /* AppDelegate.swift */,
 				AB64E63F1F2FBD0D00885CAB /* Assets.xcassets */,
@@ -113,6 +117,15 @@
 				AB4FB82F1F3E42830089BADF /* Support Files */,
 			);
 			path = RetargetlyDemo;
+			sourceTree = "<group>";
+		};
+		AB6D4DC4263969A40002CECE /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				AB6D4DC2263961460002CECE /* RequiredBridge.m */,
+				AB6D4DC1263961450002CECE /* RetargetlyDemo-Bridging-Header.h */,
+			);
+			path = Objc;
 			sourceTree = "<group>";
 		};
 		AB771D8B20E4070B0087EC6C /* Helper */ = {
@@ -171,7 +184,7 @@
 				TargetAttributes = {
 					AB64E6341F2FBD0D00885CAB = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1200;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -225,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB64E63B1F2FBD0D00885CAB /* DashboardViewController.swift in Sources */,
+				AB6D4DC3263961460002CECE /* RequiredBridge.m in Sources */,
 				ABA0B30125AE1FAD0043CFA5 /* SettingsTableViewController.swift in Sources */,
 				ABA0B2FB25AE1C5B0043CFA5 /* SwitchTableViewCell.swift in Sources */,
 				AB771D8D20E407410087EC6C /* Bundle+RetargetlyDemo.swift in Sources */,
@@ -385,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +413,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RetargetlyDemo/Support Files/Objc/RetargetlyDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +439,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RetargetlyDemo/Support Files/Objc/RetargetlyDemo-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
